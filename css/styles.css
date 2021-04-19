@@ -1,0 +1,98 @@
+:root {
+    --customdarkgrey: #263238;
+    --customlightgrey: #607d8b;
+    --customdarkblue: #1565c0;
+    --customlightblue: #42a5f5;
+}
+
+
+img{
+    width:50%;
+}
+.flex-container {
+    display: flex;
+    background-color: red;
+}
+.flex-child {
+    flex-grow: 1;
+}
+.vertical{
+    flex-direction: column;
+}
+
+.header-section{
+    background-color: var(--customdarkgrey);
+}
+
+div>div:nth-child(3n+1){
+    background-color: var(--customdarkblue);
+}
+div>div:nth-child(3n+2){
+    background-color: var(--customlightblue);
+}
+div>div:nth-child(3n+3){
+    background-color: var(--customlightgrey);
+}
+
+
+
+
+.heading-font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content-font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Remove everything after this line */
+
+/* html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #dfdfdf;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    -webkit-box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
+    background-color: white;
+    padding:10px;
+    font-weight: 100;
+}
+
+.padding{
+    margin:0px 14px 20px;
+}
+
+h1{
+    padding: 20px 0px 10px ;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0px auto;
+}
+
+.item-title{
+    padding: 32px 10px 10px;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px auto;
+}
+
+.item-date{
+    padding: 8px 10px;
+    color:purple;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0px auto;
+}
+
+.item-text{
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 0px auto;
+} */
