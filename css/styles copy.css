@@ -30,6 +30,9 @@ em{
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
+ul{
+    list-style-type:none;
+}
 li{
     padding:10px;
 }
