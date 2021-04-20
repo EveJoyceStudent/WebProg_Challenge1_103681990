@@ -1,3 +1,4 @@
+/* defint page colours */
 :root {
     --customdarkgrey: #263238;
     --customlightgrey: #607d8b;
@@ -5,25 +6,58 @@
     --customlightblue: #42a5f5;
 }
 
-
-img{
+/* img{
     width:50%;
+} */
+
+/* set fonts, remove default body margin, some adjustments to margins */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin: 0px;
 }
+.heading-font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+h2{
+    font-weight: normal;
+    font-size: medium;
+    margin: 0px;
+}
+li{
+    padding:10px;
+}
+
+/* set up flex containers, pad content */
 .flex-container {
     display: flex;
-    background-color: red;
+    /* to check for incorrect margins etc */
+    /* background-color: red; */
 }
 .flex-child {
     flex-grow: 1;
+    padding: 20px;
+    padding-left: 28px;
 }
 .vertical{
     flex-direction: column;
 }
 
+/* set background colours */
 .header-section{
     background-color: var(--customdarkgrey);
 }
-
 div>div:nth-child(3n+1){
     background-color: var(--customdarkblue);
 }
@@ -34,65 +68,15 @@ div>div:nth-child(3n+3){
     background-color: var(--customlightgrey);
 }
 
-
-
-
-.heading-font{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* create box styling for date info */
+.date-info{
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--customlightgrey);
+    width: fit-content;
+    margin: 5px;
 }
-.content-font{
-    font-family: Arial, Helvetica, sans-serif;
+.date-info-alt{
+    background: white;
+    color: black;
 }
-
-
-/* Remove everything after this line */
-
-/* html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #dfdfdf;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    -webkit-box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
-    box-shadow: inset 10px 0px 10px -10px rgba(0,0,0,0.75);
-    background-color: white;
-    padding:10px;
-    font-weight: 100;
-}
-
-.padding{
-    margin:0px 14px 20px;
-}
-
-h1{
-    padding: 20px 0px 10px ;
-    font-size: 20px;
-    font-weight: 100;
-    margin: 0px auto;
-}
-
-.item-title{
-    padding: 32px 10px 10px;
-    font-size: 16px;
-    font-weight: 100;
-    margin: 0px auto;
-}
-
-.item-date{
-    padding: 8px 10px;
-    color:purple;
-    font-size: 14px;
-    font-weight: 100;
-    margin: 0px auto;
-}
-
-.item-text{
-    padding: 8px 10px;
-    font-size: 12px;
-    font-weight: 100;
-    margin: 0px auto;
-} */
