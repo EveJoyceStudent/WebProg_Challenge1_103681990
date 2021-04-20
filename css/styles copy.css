@@ -1,0 +1,66 @@
+/* defint page colours */
+:root {
+    --customdarkgrey: #2E353A;
+    --customlightgrey: #6B7C8A;
+    --customdarkblue: #4367BD;
+    --customlightblue: #71A5F3;
+}
+
+/* img{
+    width:50%;
+} */
+
+/* set fonts, remove default body margin, some adjustments to margins */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin: 0px;
+}
+.heading-font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+}
+.grey-font{
+    color:lightgray
+}
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+li{
+    padding:10px;
+}
+.location{
+    font-size: .8rem;
+    display: inline;
+}
+
+/* set background colours */
+div:nth-child(3n+1){
+    background-color: var(--customdarkblue);
+}
+div:nth-child(3n+2){
+    background-color: var(--customlightblue);
+}
+div:nth-child(3n+3){
+    background-color: var(--customlightgrey);
+}
+#header-section{
+    background-color: var(--customdarkgrey);
+}
+
+/* create box styling for date info */
+.date-info{
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--customlightgrey);
+    width: fit-content;
+    margin: 5px;
+}
+div:nth-child(3n+3)>ul>li>p.date-info{
+    background: white;
+    color: black;
+}
